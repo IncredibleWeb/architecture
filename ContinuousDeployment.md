@@ -22,7 +22,7 @@ Continuous deployment is the process of deploying a release directly to staging 
 * Confirm that the website now appears as expected
 
 
-## Naming Conventions
+### Naming Conventions
 
 Project name can be anything, spaces are allowed but discouraged.
 
@@ -37,3 +37,7 @@ Repositories:
 * *FamousBrandName-Web*
 * *FamousBrandName-API*
 
+
+### Web.config
+
+This file is used to tell IIS that it is managing a NodeJS server, in our case with the filename *app.js*. This is why, before adding it, IIS shows the default Azure landing page. After placing the file, it will correctly forward requests.
